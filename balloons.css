@@ -1,0 +1,252 @@
+
+body {
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Dencing Script Gentium Basic;
+}
+
+header { background-color: #FFB6C1; 
+         background-image: url(background2.jpg); 
+         background-size: 100% 100%;          
+         color: white;
+         font-size: 90%; 
+         margin-top: 0; 
+         min-height: 200px;  
+       }
+
+header a { text-decoration: none; color: #40407A; }  
+
+header a:link { color: #FFF; }   
+
+header a:visited { color: #FFF; }    
+
+header a:hover { color: #EDF5F5; }
+
+
+
+nav { width: 100%;
+  padding-top: 0.5em;
+  position: fixed; 
+  top: 157px;
+  left: 0;  
+  /*background-color: #FFFFFF; */
+  background-image: url('bground.jpg');
+  text-align: right;
+  color: #B25454;
+  font-weight: bold;
+  margin: 0;
+  margin-right: 10px;
+  padding-right: 10px;
+  padding: 10px;
+  z-index: 9999;}
+
+nav ul { 
+  display: flex;
+  flex-wrap: wrap; 
+  margin: 0;
+  margin-right: 10px;
+  font-size: 1.2em; }  
+
+nav li { width: 40%;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 1em;
+  padding-left: .5em;
+  display: inline; }      
+
+
+ nav a {text-decoration: none;} 
+
+ nav a:link {color: #3F2860; }
+
+ nav a:visited {color: #497777;}
+
+ nav a:hover {color: #A26100; }
+
+
+h1 { text-align: center; 
+       color: #B25454;}
+
+h2 { text-align: center; 
+       color: #C28D49;}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.studio { font-style: italic; 
+          font-size: 1.5em;
+          color: #B25454;
+          font-weight: bold;}
+
+footer {
+         margin-top: auto;
+         height: 40px;
+         background-image: url('bground.jpg');
+         font-size: .70em; 
+         font-style: italic; 
+         text-align: center; 
+}
+
+.home { height: 20vh;
+        padding-top: 2em;
+        padding-left: 10%; }
+
+.content { height: 20vh;
+        padding-top: 2em;
+        padding-left: 10%; }
+
+#mathero { 
+  background-image: url('yogamat.jpg');
+  background-repeat: no-repeat;
+  height: 300px;
+  background-size: cover;
+  display: none; }        
+
+#loungehero {
+  background-image: url('yogalounge.jpg');
+  background-repeat: no-repeat;
+  height: 300px;
+  background-size: cover;
+  display: none; }
+
+section { padding-left: .5em;
+          padding-right: .5em; }
+
+#mobile {
+  display: inline;
+}
+
+#desktop {
+  display: none;
+}
+
+/* Style of the table */
+  table {    
+    margin: 0 auto;
+    width: 60%;
+    margin-bottom: 1em; 
+    border: 1px #3F2860; 
+    border-collapse: collapse; 
+  }
+  
+  td, th {
+    padding: 5px; 
+    /*border: 1px #3F2860;*/
+    border: 1px solid purple;
+  }
+
+  
+  tr:nth-of-type(even) {
+    background-color: #DBE8E9; 
+  }
+  
+  caption {
+    margin-bottom: 10px;
+    margin: 1em;
+    font-weight: bold; 
+    font-size: 120%; 
+  }
+
+/* /Style of the table */
+
+form {
+    display: flex;
+    flex-direction: column; /* Single column */
+    padding-left: 1em;
+    width: 80%; 
+} 
+
+input, textarea {
+    margin-bottom: .5em;
+}
+
+
+@media (min-width: 600px) 
+{
+  form {
+    width: 60%; 
+    display: grid;
+    grid-template-columns: 12em 1fr; /* Two columns: 12em and 1fr */
+    grid-gap: 1em; 
+}
+
+input[type="submit"] {
+    grid-column: 2; /* Place in the second column */
+    width: 9em; /* Set width to 9em */
+}
+
+/* Configure label element selector with right alignment */
+label {
+    text-align: right;
+}
+
+  nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end; 
+  }
+
+  nav li {
+    width: 7em; 
+  }
+
+  section {
+    padding-left: 2em; 
+    padding-right: 2em; 
+  }
+
+  #mathero {
+    display: block; 
+    padding-bottom: 1em; 
+  }
+
+  #loungehero {
+    display: block; 
+    padding-bottom: 1em;
+  }
+
+  #flow {
+    display: flex; 
+    flex-direction: row; 
+  }
+
+  #mobile {
+    display: none; 
+  }
+
+  #desktop {
+    display: inline; 
+  }
+
+}
+
+
+@media (min-width: 1024px) 
+{  
+  header {
+    font-size: 120%;
+  }
+  
+  .home {
+    height: 50vh;
+    padding-top: 5em;
+    padding-left: 8em;
+  }
+  
+  .content {
+    height: 30vh;
+    padding-top: 1em;
+    padding-left: 8em;
+  }
+
+  #wrapper {
+    margin: auto;
+    width: 80%;
+  }
+}
+
