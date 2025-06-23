@@ -166,87 +166,37 @@ input, textarea {
 }
 
 
-@media (min-width: 600px) 
-{
-  form {
-    width: 60%; 
-    display: grid;
-    grid-template-columns: 12em 1fr; /* Two columns: 12em and 1fr */
-    grid-gap: 1em; 
+@media (min-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+ /*   nav {
+      width: 50px; /* Make navigation adapt to smaller screens */*/
+    }
+*/       
+/* header {
+        width: 850px; /* Make header adapt to smaller screens */*/
+    }
+*/
+    .thumbnail {
+        width: 150px; /* Adjust image sizes for mobile */
+        height: 150px;
+    }
+
+    #desktop {
+        color: #771621;
+        display: none; /* Hide desktop-specific content */
+    }
+    #mobile {
+        color: #771621;
+        display: inline; /* Show mobile-specific content */
+    }
+    #desktop2 {
+        display: none; /* Hide desktop-specific content */
+    }
+    #mobile2 {
+        display: inline; /* Show mobile-specific content */
+    }
 }
-
-input[type="submit"] {
-    grid-column: 2; /* Place in the second column */
-    width: 9em; /* Set width to 9em */
-}
-
-/* Configure label element selector with right alignment */
-label {
-    text-align: right;
-}
-
-  nav ul {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-end; 
-  }
-
-  nav li {
-    width: 7em; 
-  }
-
-  section {
-    padding-left: 2em; 
-    padding-right: 2em; 
-  }
-
-  #mathero {
-    display: block; 
-    padding-bottom: 1em; 
-  }
-
-  #loungehero {
-    display: block; 
-    padding-bottom: 1em;
-  }
-
-  #flow {
-    display: flex; 
-    flex-direction: row; 
-  }
-
-  #mobile {
-    display: none; 
-  }
-
-  #desktop {
-    display: inline; 
-  }
-
-}
-
-
-@media (min-width: 1024px) 
-{  
-  header {
-    font-size: 120%;
-  }
-  
-  .home {
-    height: 50vh;
-    padding-top: 5em;
-    padding-left: 8em;
-  }
-  
-  .content {
-    height: 30vh;
-    padding-top: 1em;
-    padding-left: 8em;
-  }
-
-  #wrapper {
-    margin: auto;
-    width: 80%;
-  }
-}
-
