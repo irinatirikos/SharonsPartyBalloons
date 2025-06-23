@@ -26,7 +26,46 @@
         </ul>    
     </nav>
     <main>
-      beeeeeeeeeeeeeeeeeee
+   
+        <img src="sideballoonLeft.jpg" alt="Balloons on the side" height="400" width="225" align="left">
+        <img src="sideballoonRight.jpg" alt="Balloons on the side" height="400" width="225" align="right">
+        <h1>Welcome to Sharon's Party Balloons – Contact Us!</h1>
+        <p><h2>Please fill out this form</h2>
+        </p>
+
+    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+
+        <label for="myName">Your Name:</label>
+        <input type="text" name="myName" id="myName" required>
+
+        <label for="myEmail">Your Email:</label>
+        <input type="email" name="myEmail" id="myEmail" required>
+        
+        <label for="myPhone">Your Phone#:</label>
+        <input type="tel" name="myPhone" id="myPhone" required>
+        
+        <label for="myRefer">How did you know about us?</label>
+        <input type="text" name="myRefer" id="myRefer" list="referral" required>
+        <datalist id="referral">
+            <option value="Google" label="Google">
+            <option value="Facebook" label="Facebook">
+            <option value="Friend" label="Friend">
+            <option value="Other" label="Other">
+        </datalist>
+
+        <label for="myComments">Your Comments/Questions:</label>
+        <textarea name="myComments" id="myComments" rows="2" cols="20" required></textarea>
+        <br>
+        <input type="submit" name="mySubmit" id="mySubmit" value="Send"> 
+
+    </form>
+  <div align="center">
+        <span class="studio">Sharon's Party Balloons</span><br>
+        4335 13th Ln NE<br>
+        St. Petersburg, Fl 34133<br><br>
+        (813) 970-4948<br><br>
+        </div>
+
     </main>
 
     <footer>
