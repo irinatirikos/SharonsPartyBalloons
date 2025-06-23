@@ -28,12 +28,37 @@
     <main>
         <img src="sideballoonLeft.jpg" alt="Balloons on the side" height="400" width="225" align="left">
         <img src="sideballoonRight.jpg" alt="Balloons on the side" height="400" width="225" align="right">
-        <h1>Welcome to Sharon's Party Balloons – Where Every Party Pops!</h1>
-        <p><h2>We create stunning balloon arrangements to make your celebrations unforgettable!</h2>
+        <h1>Welcome to Sharon's Party Balloons – Contact Us!</h1>
+        <p><h2>Please fill out this form for contact us.</h2>
         </p>
-        <p align="center">            
-                Browse our gallery, book a consultation, or explore our services!           
-        </p>
+
+    <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+
+        <label for="myName">Your Name:</label>
+        <input type="text" name="myName" id="myName" required>
+
+        <label for="myEmail">Your Email:</label>
+        <input type="email" name="myEmail" id="myEmail" required>
+        
+        <label for="myPhone">Your Phone#:</label>
+        <input type="tel" name="myPhone" id="myPhone" required>
+        
+        <label for="myRefer">How did you know about us?</label>
+        <input type="text" name="myRefer" id="myRefer" list="referral" required>
+        <datalist id="referral">
+            <option value="Google" label="Google">
+            <option value="Facebook" label="Facebook">
+            <option value="Friend" label="Friend">
+            <option value="Other" label="Other">
+        </datalist>
+
+        <label for="myComments">Your Comments/Questions:</label>
+        <textarea name="myComments" id="myComments" rows="2" cols="20" required></textarea>
+        <br>
+        <input type="submit" name="mySubmit" id="mySubmit" value="Send"> 
+
+    </form>
+      </p>
 
         <div align="center">
         <span class="studio">Sharon's Party Balloons</span><br>
